@@ -186,6 +186,7 @@ log_errors = On
 
 ---
 
+<<<<<<< HEAD
 ## 9. 포트폴리오 연결 · 배운 점
 
 - 메모리 안전성(UAF·불완전 초기화)은 바이너리뿐 아니라 **웹 인프라 핵심 소프트웨어**에서도 인증 없는 RCE로 직결됩니다.
@@ -198,6 +199,9 @@ log_errors = On
 ---
 
 ## 10. 출처
+=======
+## 9. 출처
+>>>>>>> 473829ee1d7b630a4de7e6ac7d67683f652b8aa8
 - watchTowr — PHP CVE-2026-109618 FAQ (PHP2Shell): https://watchtowr.com/intelligence/php-cve-2026-109618-faq/
 - CISA — Critical Vulnerabilities in PHP Require Immediate Patching (2026-10-21) 및 KEV 카탈로그
 - Google Cloud — Responding to core PHP vulnerabilities CVE-2026-109618/109619: https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619
