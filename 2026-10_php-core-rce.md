@@ -185,25 +185,3 @@ log_errors = On
 | 호스트 | FPM 워커 재생성 급증, SIGSEGV(종료코드 139), 코어 덤프 | 실패한 힙 조작 |
 
 ---
-
-<<<<<<< HEAD
-## 9. 포트폴리오 연결 · 배운 점
-
-- 메모리 안전성(UAF·불완전 초기화)은 바이너리뿐 아니라 **웹 인프라 핵심 소프트웨어**에서도 인증 없는 RCE로 직결됩니다.
-- 공격 성립 조건(OOM 유발, 워커 재사용)을 이해하면 **설정 하드닝과 탐지 룰**을 논리적으로 설계할 수 있습니다.
-- 연계:
-  - `kisa-vuln-checker` → **PHP 버전 점검** 항목 추가(패치 버전 미만이면 취약), `expose_php`·`session.upload_progress` 설정 점검.
-  - `soc-detection-lab` → 위 "탐지 지표"를 **Sigma/SPL 룰**로 작성(긴 PHPSESSID 응답, php-fpm 자식 셸 프로세스 등).
-  - `web-pentest-reports` → "파싱 단계 입력 처리"와 WAF 우회 관점 보고서 소재.
-
----
-
-## 10. 출처
-=======
-## 9. 출처
->>>>>>> 473829ee1d7b630a4de7e6ac7d67683f652b8aa8
-- watchTowr — PHP CVE-2026-109618 FAQ (PHP2Shell): https://watchtowr.com/intelligence/php-cve-2026-109618-faq/
-- CISA — Critical Vulnerabilities in PHP Require Immediate Patching (2026-10-21) 및 KEV 카탈로그
-- Google Cloud — Responding to core PHP vulnerabilities CVE-2026-109618/109619: https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619
-- PHP 보안 권고: GHSA-w8hw-w9fx-j79w, GHSA-6wmf-4rv5-p3rp
-- Tenable — Microsoft October 2026 Patch Tuesday(동시기 패치 동향 참고)
